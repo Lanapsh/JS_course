@@ -1,8 +1,8 @@
 //1. Среди трех чисел найти среднее арифметическое. Если среди чисел есть равные, вывести сообщение "Ошибка". Числа принять от пользователя.
 
-var a = prompt('Please, enter a');
-var b = prompt('Please, enter b');
-var c = prompt('Please, enter c');
+var a = +prompt('Please, enter number');
+var b = +prompt('Please, enter number');
+var c = +prompt('Please, enter number');
 if (a == b){
     alert ('Mistake');
 } else if (b == c){
@@ -11,5 +11,5 @@ if (a == b){
     alert ('Mistake');
 } else {
     alert ((a + b + c)/3);
-
+   
 }

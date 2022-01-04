@@ -1,13 +1,25 @@
-// 4. Напишите функцию которая возвращает длину самого длинного слова в предложении. 
+// 4. Напишите функцию которая возвращает длину самого длинного слова в предложении.
 // Ваш ответ должен быть числом.
 // "The quick brown fox jumped over the lazy dog" => 6
 
-var text = "The quick brown fox jumped over the lazy dog";
 
-function longStr(string){
-    var arrFromStr = string.split(" ");
+function bigString(string) {
 
-    console.log(arrFromStr);
+    var arrFromString = string.split(' ');
+    console.log(arrFromString);
 
-    for (var i = 0; i < arrFromStr.length; i++);
+    var maxStr = 0;
+
+    for (i = 0; i < arrFromString.length; i ++) {
+        console.log(arrFromString[i].length);
+
+
+        if (maxStr < arrFromString[i].length) {
+            maxStr = arrFromString[i].length;
+        }
+    }
+    console.log('********')
+    console.log(maxStr);
+
 }
+var text = "The quick brown fox jumped over the lazy dog";

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<!-- 
+          Задание:
+            Создать список дел, в который можно:
+            - Добавить новый элемент
+            - Удалить элемент
+    
+          Шаблон элемента:
+            <li class="listItem">            
+                <span class="TodoText">{add text}</span>
+                <button>Remove</button>
+            </li>
+    
+        
+     -->
+
+<body>
+    <header>
+        <h2>My To Do List</h2>
+        <input id="newToDo" class="textInput" />
+        <input id="AddToDo" class="addButton" type="button" value="Add" />
+    </header>
+    <ul id="toDoList">
+        <!-- <li class="listItem">
+            <span class="TodoText">{add text}</span>
+            <button>Remove</button>
+        </li> -->
+    </ul>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
